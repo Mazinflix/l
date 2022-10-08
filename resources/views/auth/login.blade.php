@@ -5,7 +5,7 @@
         <div class="card mx-4">
             <div class="card-body p-4">
                 <div style="display: flex;justify-content:center;align-items:center">
-                <img src="/images/gum-logo.png" class="w-50 h-50" alt="" srcset="">
+                <img src="/image/lord.png" class="w-50 h-50" alt="" srcset="">
 
                 </div>
 

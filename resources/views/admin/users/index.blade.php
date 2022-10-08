@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.soft')
 @section('content')
 <div class="content">
     @can('user_create')
