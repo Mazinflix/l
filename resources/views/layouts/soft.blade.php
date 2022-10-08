@@ -23,6 +23,8 @@
     <title>
         Lords Luxury
     </title>
+     <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
@@ -56,7 +58,7 @@
         {{-- aside --}}
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg overflow-x-hidden">
         <!-- Navbar -->
-        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" navbar-scroll="true">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl position-sticky blur shadow-blur mt-4 left-auto top-1 z-index-sticky" id="navbarBlur" navbar-scroll="true">
         <div class="container-fluid py-1 px-3">
             <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 ">
@@ -178,22 +180,6 @@
             {{-- content  --}}
                 @yield('content')
             {{-- content --}}
-        <footer class="footer pt-3  ">
-            <div class="container-fluid">
-            <div class="row align-items-center justify-content-lg-between">
-                <div class="col-lg-6 mb-lg-0 mb-4">
-                <div class="copyright text-center text-sm text-muted text-lg-end">
-                    © <script>
-                    document.write(new Date().getFullYear())
-                    </script>,
-                    made with <i class="fa fa-heart"></i> by
-                    <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-                    for a better web.
-                </div>
-                </div>
-            </div>
-            </div>
-        </footer>
         </div>
     </main>
     <div class="fixed-plugin">

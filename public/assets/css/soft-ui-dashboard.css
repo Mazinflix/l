@@ -4,6 +4,10 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@font-face {
+  font-family: "cairo";
+  src: url("../fonts/changa.ttf");
+}
 :root {
   --bs-blue: #63B3ED;
   --bs-indigo: #596CFF;
@@ -79,6 +83,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+div,h1,h2,h3,h4,h5,h6,p{
+  font-family: "cairo";
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22524,7 +22532,7 @@ hr.horizontal.gray-light {
   display: block;
   overflow: auto;
   height: fit-content;
-  max-height: 75%;
+  max-height: 80%;
 }
 
 .navbar-vertical.navbar-expand-xs>[class*="container"] {
