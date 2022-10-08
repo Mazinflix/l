@@ -18,4 +18,8 @@ class HomeController
         $new_clients = Customer::where('created_at', '>=', today())->count();
         return view('home', compact(['sales', 'today_sales', 'new_clients']));
     }
+
+    public function orders(){
+        return view('orders');
+    }
 }

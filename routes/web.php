@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\Admin\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -96,6 +98,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Wallet Order
     Route::delete('wallet-orders/destroy', 'WalletOrderController@massDestroy')->name('wallet-orders.massDestroy');
     Route::resource('wallet-orders', 'WalletOrderController');
+
+    //orders
+    Route::get('all-orders', HomeController::class, 'orders')->name('orders.all');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password
